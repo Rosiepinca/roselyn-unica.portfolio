@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roselyn Pinca</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&family=Madimi+One&family=Pacifico&family=Poetsen+One&family=Staatliches&family=Titan+One&family=Wendy+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1 id = "urs">UNIVERSITY OF RIZAL SYSTEM (ANGONO CAMPUS)</h1>
+            <h3>STUDENT PORTFOLIO</h3>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#summaryscores">Summary</a></li>
+                    <li><a href="#activities">Activities</a></li>
+                    <li><a href="#quizzes">Quizzes</a></li>
+                    <li><a href="#exams">Exams</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="about">
+            <div class="about-content">
+                <div class="text">
+                    <h1>UNICA MANGULABNAN</h1>
+                    <h4>I'm a student of Elementary Education at the University of Rizal System Angono Campus. I love working with kids and want to create a positive learning environment for all. I do well in my studies because I'm really interested in how people learn and teaching methods. Outside of classes, I am child, a sibling and an aunt. I love the idea of being able to help in my family with household chores and other things. I think education can change lives, and I want to help my students reach their full potential. In the future, I hope to be a teacher who inspires a love for learning and fights for fair education for everyone.</h4>
+                </div>
+                <img src="./Assets/pictures/Unica.png" alt="Roselyn Picture" class="profile-img">
+            </div>
+        </section>
+        
+        <section id="summaryscores">
+            <h2>SUMMARY OF SCORES</h2>
+            <img src="./Assets/Unica Activities/u-summary.png" alt="Summary Image">
+        </section>
+          
+        <section id="activities">
+            <h2>ACTIVITIES</h2>
+            <div class="activity-slideshow-container">
+                <img class="activity-image" src="./Assets/Unica Activities/Activities/1.jpg" alt="Image 1">
+                <img class="activity-image" src="./Assets/Unica Activities/Activities/2.jpg" alt="Image 2">
+                <img class="activity-image" src="./Assets/Unica Activities/Activities/3.jpg" alt="Image 3">
+                <img class="activity-image" src="./Assets/Unica Activities/Activities/4.jpg" alt="Image 4">
+                <img class="activity-image" src="./Assets/Unica Activities/Activities/6.jpg" alt="Image 5">
+                <img class="activity-image" src="../Assets/Unica Activities/Activities/5.jpg" alt="Image 6">
+                <!-- Add more images as needed -->
+            </div>
+            <button class="activity-prev" onclick="plusSlides(-1)">&lt;</button>
+            <button class="activity-next" onclick="plusSlides(1)">&gt;</button>    
+        </section>
+
+        <section id="quizzes">
+            <h2>QUIZZES</h2>
+            <div class="quiz-slideshow-container">
+                <img class="quiz-image" src="./Assets/Unica Activities/Quizzes/1.jpg" alt="Image 1">
+                <img class="quiz-image" src="./Assets/Unica Activities/Quizzes/2.jpg" alt="Image 2">
+                <img class="quiz-image" src="./Assets/Unica Activities/Quizzes/3.jpg" alt="Image 3">
+                <img class="quiz-image" src="./Assets/Unica Activities/Quizzes/4.jpg" alt="Image 4">
+                <img class="quiz-image" src="./Assets/Unica Activities/Quizzes/5.jpg" alt="Image 5">
+                <img class="quiz-image" src="./Assets/Unica Activities/Quizzes/5.jpg" alt="Image 6">
+                <!-- Add more images as needed -->
+            </div>
+            <button class="quiz-prev" onclick="plusQuizSlides(-1)">&lt;</button>
+            <button class="quiz-next" onclick="plusQuizSlides(1)">&gt;</button>    
+    </section>
+                    <section id="exams">
+                        <h2>EXAMS</h2>
+                        <div class="exams-slideshow-container">
+                            <img class="exams-image" src="./Assets/Unica Activities/Exams/1.jpg" alt="Image 1">
+                            <img class="exams-image" src="/Assets/Unica Activities/Exams/2.jpg" alt="Image 2">
+                            <img class="exams-image" src="./Assets/Unica Activities/Exams/3.jpg" alt="Image 3">
+                            <img class="exams-image" src="./Assets/Unica Activities/Exams/4.jpg" alt="Image 4">
+                            <img class="exams-image" src="/Assets/Unica Activities/Exams/5.jpg" alt="Image 5">
+                            <!-- Add more images as needed -->
+                        </div>
+                        <button class="exams-prev" onclick="plusExamSlides(-1)">&lt;</button>
+                        <button class="exams-next" onclick="plusExamSlides(1)">&gt;</button> 
+                    </section>
+        <footer>
+            <p>&copy; 2024 Unica Mangulabnan. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,420 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header start */
+.wrapper {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 5px;
+    height: 150px auto;
+    text-align: center;
+    margin-bottom: 0;
+    background-color: #9b5252;
+    
+}
+
+
+header h1 {
+    font-family: "Staatliches", sans-serif;
+    color: #FFD0D0;
+    letter-spacing: 2px;
+}
+
+header h3 {
+    color: #601f1f;
+    font-style: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: #fcb3b3;
+}
+
+/* header ends */
+
+/* summary */
+#summaryscores {
+    width: 100%;
+    height: 600px;
+    background-color: #f0f0f0;
+    display: flex; /* Use flexbox to center content vertically and horizontally */
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Ensure the container is positioned */
+    text-align: center; /* Center align text content */
+}
+
+#summaryscores h2 {
+    color: #1C4F89; /* Set the color of h2 to blue */
+    position: absolute; /* Position the h2 absolutely */
+    top: 20px; /* Adjust the top position as needed */
+    left: 50%; /* Center the h2 horizontally */
+    transform: translateX(-50%); /* Adjust for center alignment */
+}
+
+#summaryscores img {
+    max-width: 90%; /* Ensure the image doesn't exceed the width of its container */
+    max-height: 80%; /* Ensure the image doesn't exceed the height of its container */
+}
+
+
+/* end summary */
+/* Start about section */
+
+#about {
+    background-color: #FFD0D0;
+}
+
+
+.about-content {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.text {
+    float: left;
+    padding: 5%;
+    text-align: center;
+    font-size: 50px; /* Default font size */
+}
+
+.text > h1 {
+    color: #892a2a;
+    font-family: "Staatliches", sans-serif;
+    font-size: 100px;
+    margin: 0;
+animation: bounce 1s ease infinite;
+    animation: slideInFromLeft 1s ease, spin 2s ease infinite;
+}  
+
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.text > h4 {
+    color: rgb(98, 49, 49);
+    font-size: 20px;
+    animation: slideUp 1s ease;
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.profile-img {
+    max-width: 100%;  
+    animation: popUp 0.5s ease forwards;
+    opacity: 0;
+    /* Ensure image doesn't exceed container width */
+}
+
+@media (min-width: 768px) {
+    .about-content {
+        flex-direction: row;
+    }
+
+    .text {
+        width: 80%;
+        font-size: 12px; /* Larger font size for larger screens */
+    }
+     
+
+    .profile-img {
+        width: 40%;
+        animation: popUp 0.5s ease forwards;
+    opacity: 0;
+    }
+}
+
+@keyframes popUp {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+    
+    /* end about section */
+
+
+    /* section color */
+    #summaryscores, #Quizzes{
+        background-color:#A2B8CF ;
+       }
+       
+       #Exams {
+           background-color: #FFD0D0;
+       }
+
+
+       
+/* end section color */
+
+/* Summary of scores */
+
+
+/* End of summarry  ofscores */
+
+
+/*activities*/
+
+#activities {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    background-color: #FFD0D0;
+    margin: 0; /* Removed margin */
+  }
+
+  #activities > h2 {
+    text-align: center;
+    color: #1C4F89;
+    margin-top: 50px;
+  }
+
+  .activity-slideshow-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    overflow: hidden;
+    justify-content: center; /* Center aligning images */
+  }
+
+  .activity-slideshow-container > img {
+    height: 400px;
+    transition: transform 0.5s ease;
+  }
+
+  .activity-image {
+    height: 400px;
+    margin: 0 10px; /* Add margin to create space between images */
+    transition: transform 0.5s ease;
+  }
+  
+  .activity-prev, .activity-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 8px 15px 8px 15px;
+    background-color: #A87676;
+    border-radius: 100%;
+    color: white;
+    border: none;
+    z-index: 100;
+    font-size: 24px;
+    font-weight: 1000;
+  }
+  
+  .activity-prev{
+    left: 90px;
+  }
+
+  .activity-next {
+    right: 90px;
+  }
+
+  .activity-prev:hover, .activity-next:hover{
+    background-color: #A2B8CF;
+    color: white;
+    cursor: pointer;
+  }
+
+
+  /* start quizzes */
+  #quizzes {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    background-color: #A2B8CF;
+    margin: 0; /* Removed margin */
+  }
+
+  #quizzes > h2 {
+    text-align: center;
+    color: #1C4F89;
+    margin-top: 50px;
+  }
+
+  .quiz-slideshow-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    overflow: hidden;
+    justify-content: center; /* Center aligning images */
+  }
+
+  .quiz-slideshow-container > img {
+    height: 400px;
+    transition: transform 0.5s ease;
+  }
+
+  .quiz-image {
+    height: 400px;
+    margin: 0 10px; /* Add margin to create space between images */
+    transition: transform 0.5s ease;
+  }
+  
+  .quiz-prev, .quiz-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 8px 15px 8px 15px;
+    background-color: white;
+    border-radius: 100%;
+    background-color: #1C4F89;
+    border: none;
+    z-index: 100;
+    font-size: 24px;
+    font-weight: 1000;
+    color:white;
+  }
+  
+  .quiz-prev{
+    left: 90px;
+  }
+
+  .quiz-next {
+    right: 90px;
+  }
+
+  .quiz-prev:hover, .quiz-next:hover{
+    background-color: #9b5252;
+    color: white;
+    cursor: pointer;
+  }
+
+
+  /*start exams */
+  #exams {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    background-color:#FFD0D0;
+    margin: 0; /* Removed margin */
+    margin-bottom: 0;
+  }
+
+  #exams > h2 {
+    text-align: center;
+    color: #1C4F89;
+    margin-top: 50px;
+  }
+
+  .exams-slideshow-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    overflow: hidden;
+    justify-content: center; /* Center aligning images */
+  }
+
+  .exams-slideshow-container > img {
+    height: 400px;
+    transition: transform 0.5s ease;
+  }
+
+  .exams-image {
+    height: 400px;
+    margin: 0 10px; /* Add margin to create space between images */
+    transition: transform 0.5s ease;
+  }
+  
+  .exams-prev, .exams-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 8px 15px 8px 15px;
+    background-color: white;
+    border-radius: 100%;
+    background-color: #9b5252;
+    border: none;
+    z-index: 100;
+    font-size: 24px;
+    font-weight: 1000;
+    color:white;
+  }
+  
+  .exams-prev{
+    left: 90px;
+  }
+
+  .exams-next {
+    right: 90px;
+  }
+
+  .exams-prev:hover, .exams-next:hover{
+    background-color: #A2B8CF;
+    color: white;
+    cursor: pointer;
+  }
+
+  /* end exams */
+
+/* start footer */
+/* start footer */
+footer {
+    background-color: #CA8787;
+    text-align: center;
+    height: 200px; /* Adjusted height */
+    max-width: 100%; /* Maximum width */
+    padding: 0;
+    margin: 0;
+    border: 0;
+    display: flex; /* Added display flex */
+    justify-content: center; /* Center align contents horizontally */
+    align-items: center; /* Center align contents vertically */
+}
+
+footer p {
+    color: white; /* Added for example, style as needed */
+    font-size: 18px; /* Added for example, style as needed */
+}
+/* end footer */
+

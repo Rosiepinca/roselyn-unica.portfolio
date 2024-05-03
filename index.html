@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roselyn Pinca</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&family=Madimi+One&family=Pacifico&family=Poetsen+One&family=Staatliches&family=Titan+One&family=Wendy+One&display=swap" rel="stylesheet">
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header start */
+.wrapper {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 5px;
+    height: 150px auto;
+    text-align: center;
+    margin-bottom: 0;
+    background-color: #9b5252;
+    
+}
+
+
+header h1 {
+    font-family: "Staatliches", sans-serif;
+    color: #FFD0D0;
+    letter-spacing: 2px;
+}
+
+header h3 {
+    color: #601f1f;
+    font-style: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: #fcb3b3;
+}
+
+
+/* About section */
+#about {
+    background-color: #A2B8CF;
+}
+
+
+.about-content {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.text {
+    float: left;
+    padding: 5%;
+    text-align: center;
+    font-size: 50px; /* Default font size */
+}
+
+.text > h1 {
+    color: #892a2a;
+    font-family: "Staatliches", sans-serif;
+    font-size: 90px;
+    margin: 0;
+animation: bounce 1s ease infinite;
+    animation: slideInFromLeft 1s ease, spin 2s ease infinite;
+}  
+
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.text > h4 {
+    color: rgb(98, 49, 49);
+    font-size: 20px;
+    animation: slideUp 1s ease;
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.profile-img {
+    max-width: 100%;  
+    animation: popUp 0.5s ease forwards;
+    opacity: 0;
+    /* Ensure image doesn't exceed container width */
+}
+
+@media (min-width: 768px) {
+    .about-content {
+        flex-direction: row;
+    }
+
+    .text {
+        width: 80%;
+        font-size: 12px; /* Larger font size for larger screens */
+    }
+     
+
+    .profile-img {
+        width: 40%;
+        animation: popUp 0.5s ease forwards;
+    opacity: 0;
+    }
+}
+
+@keyframes popUp {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  footer {
+    background-color: #CA8787;
+    text-align: center;
+    height: 200px; /* Adjusted height */
+    max-width: 100%; /* Maximum width */
+    padding: 0;
+    margin: 0;
+    border: 0;
+    display: flex; /* Added display flex */
+    justify-content: center; /* Center align contents horizontally */
+    align-items: center; /* Center align contents vertically */
+}
+
+footer p {
+    color: white; /* Added for example, style as needed */
+    font-size: 18px; /* Added for example, style as needed */
+}
+/* end footer */
+
+
+
+
+</style>
+
+</head>
+<body>
+    <header>
+            <h1 id = "urs">UNIVERSITY OF RIZAL SYSTEM (ANGONO CAMPUS)</h1>
+            <h3>STUDENT PORTFOLIO</h3>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./Other/Roselyn.html">Roselyn</a></li>
+                    <li><a href="./Other/Roselyn.html">Unica</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="about">
+            <div class="about-content">
+                <div class="text">
+                    <h1>ROSELYN & UNICA</h1>
+                    <h4>Hey there! I'm Roselyn, and my classmate, Unica, and I make quite the team in the BEED department at URS Angono Campus. While we may not be joined at the hip, our collaboration is definitely something to talk about. I'm all about bringing creativity and attention to detail to the table, while Unica's knack for humor adds a refreshing twist to our study sessions.
+                          <br> <br>
+                        Now, if you're navigating our website, start by checking out the "Home" page for an overview of what we're all about. Then, feel free to explore our individual portfolios by clicking on our names, "Roselyn" or "Unica." You'll get to see our unique strengths and contributions firsthand. And hey, don't forget to drop by the "About" section to learn more about our dynamic partnership! So, go ahead, click away, and enjoy the journey through our virtual world of creativity and collaboration!</h4>
+                </div>
+                <img src="./Assets/pictures/11.png" alt="Unica and Roselyn" class="profile-img">
+            </div>
+        </section>
+        <footer>
+            <p>&copy; 2024 Roselyn & Unica. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
